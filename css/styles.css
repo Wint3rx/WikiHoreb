@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto Mono','sans-serif';
+}
+header{
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    background-image: url(/assest/fondo.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: left;
+}
+.nav{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.801);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 10px 60px;
+}
+.nombre{
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    margin: 5.8vh;
+}
+.menu{
+    display: flex;
+    font-size: 20px;
+    color: white;
+    font-weight: 100%;
+}
+.menu li{
+    list-style: none;
+    margin: 20px;
+}
+.menu li a{
+    color: white;
+    text-decoration: none;
+    font-weight: lighter;
+    transition: all 0.2s ease;
+}
+.menu li a:hover{
+    background: rgb(41, 66, 99);
+    padding: 0 20px;
+    border-radius: 20px;
+    box-shadow: 2px 4px 0px;
+}
+.wave{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.title{
+    font-weight: 100%;
+    color: white;
+    font-size: 45px;
+    margin: 10vh;
+    text-shadow: 6px 6px 6px black;
+}
+.container{
+    width: 100%;
+    padding: 1.5cm 3cm; 
+}
+.text-about {
+    text-align: center;
+}
+.h2-s {
+    color: rgb(145, 97, 223);
+    font-size: 40px;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.311);
+    transition: all 0.7s ease;
+}
+.h2-s:hover {
+    font-size: 50px;
+}
+.container-tar {
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20vh;
+}
+.container-tar .tar {
+    width: 330px;
+    height: 490px;
+    border-radius: 8px;
+    box-shadow: 2px 5px 10px rgba(0, 2, 6, 0.516);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+.container-tar .tar:hover {
+    box-shadow: 0px 5px 2px rgb(141, 141, 141);
+    background-color: rgb(145, 97, 223);
+    transform: translateY(20px);
+    color: white;
+}
+.container-tar .tar img {
+    width: 330px;
+    height: 220px;
+}
+.container-tar .tar h4 {
+    font-family: 'Silkscreen', cursive;
+    font-size: 20px;
+}
+.container-tar .tar p {
+    font-size: small;
+    margin: 2vh;
+}
+.so-me {
+    margin: 2vh;
+}
+.soc-grid {
+    display: grid;
+    height: 550px;
+    grid-template-areas: "img1 img1 img2 img3"
+        "img1 img1 img4 img5";
+    gap: 10px;
+
+}
+.soc-it {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.soc-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.soc-it:nth-of-type(1) {
+    grid-area: img1;
+}
+.soc-it:nth-of-type(2) {
+    grid-area: img2;
+}
+.soc-it:nth-of-type(3) {
+    grid-area: img3;
+}
+.soc-it:nth-of-type(4) {
+    grid-area: img4;
+}
+.soc-it:nth-of-type(5) {
+    grid-area: img5;
+}
+.soc-hover {
+    position: absolute;
+    background-color: #6358ff54;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    transform: translateY(0%);
+    transition: transform 0.6s ease;
+}
+.soc-hover:hover.soc-hover {
+    transform: translateY(100%);
+    background: #6358ff80;
+}
+
+.soc-title {
+    font-size: 20px;
+    margin-top: 30%;
+}
+footer{
+    background-image: url(/assest/fondo.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 190px;
+    width: 100%;
+    color: white;
+    bottom: 0;
+    overflow: hidden;
+}
+.footer-c{
+    display: flex;
+    justify-content: left;
+}
+.footer-c img{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 0px #6258FF;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.wave-2{
+    position: absolute;
+    width: 100%;
+}
